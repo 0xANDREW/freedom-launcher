@@ -1,0 +1,8 @@
+.focused {
+  border: 1px dashed black;
+}
+
+.entry {
+  padding: 5px;
+}
+
