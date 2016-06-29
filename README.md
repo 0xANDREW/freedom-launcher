@@ -15,3 +15,6 @@ See `config.json` for examples.
 - Icons
 - Web config interface
 - Improve interface
+- Flask CoffeeScript
+- Flask asset pipeline
+- Example systemd service?
