@@ -2,11 +2,27 @@
   border: 1px dashed white;
 }
 
+.focused img {
+  border: 1px dashed white;
+}
+
 .entry {
   padding: 5px;
 }
 
+.entry img {
+  max-width: 256px;
+}
+
 body {
   background-color: #262626;
+}
+
+.content {
+  padding-top: 15px;
+}
+
+.launcher {
+  margin-bottom: 15px;
 }
 

@@ -2,30 +2,36 @@
   "launchers": [
     {
       "name": "Netflix",
-      "url": "https://netflix.com"
+      "url": "https://netflix.com",
+      "icon": "netflix-icon-2.png"
     },
     {
       "name": "YouTube",
-      "url": "https://youtube.com/tv"
+      "url": "https://youtube.com/tv",
+      "icon": "youtube-icon.png"
     },
     {
       "name": "Kodi",
-      "cmd": "/usr/bin/kodi"
+      "cmd": "/usr/bin/kodi",
+      "icon": "kodi_512x512.png"
     },
     {
       "name": "Vimeo",
-      "url": "https://vimeo.com/couchmode"
+      "url": "https://vimeo.com/couchmode",
+      "icon": "Vimeo_icon_block.png"
     },
     {
       "name": "Amazon Video",
-      "url": "https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011"
+      "url": "https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011",
+      "icon": "amazon-icon.png"
     },
     {
       "name": "Google",
-      "url": "https://google.com"
+      "url": "https://google.com",
+      "icon": "google-chrome-icon-6.png"
     }
   ],
-  "cols": 4,
+  "cols": 3,
   "browser": {
     "path": "/usr/bin/google-chrome-stable",
     "args": [

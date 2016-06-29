@@ -9,6 +9,13 @@ script src=url_for('static', filename='js/launcher.js')
 - for row in rows:
   - for launcher in row:
     div class=('col-md-%d' % (12 / cols))
-      h1
-        a.entry href=('/launch/%s' % launcher['name']) =launcher['name']
+      .launcher
+        - if 'icon' in launcher:
+          a.entry href=('/launch/%s' % launcher['name'])
+            img src=url_for('static', filename='icons/%s' % launcher['icon'])
+        - else
+          h1
+            a.entry href=('/launch/%s' % launcher['name']) =launcher['name']
+
+  .clearfix
 
