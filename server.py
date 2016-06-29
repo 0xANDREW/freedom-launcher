@@ -15,12 +15,9 @@ app.config['MAKO_PREPROCESSOR'] = preprocessor
 with open('config.json') as f:
     launcher_config = json.loads(f.read())
 
-def _chrome(url):
-    subprocess.call([
-        'google-chrome-stable', 
-        '--user-data-dir=%s/flask-launcher' % tempfile.gettempdir(),
-        '--kiosk', url
-        ])
+def _browser(url):
+    b = launcher_config['browser']
+    subprocess.call([b['path']] + b['args'] + [url])
 
 @app.route('/')
 def index():
@@ -31,7 +28,7 @@ def launch(name):
     for n in launcher_config['launchers']:
         if n['name'] == name:
             if 'url' in n:
-                _chrome(n['url'])
+                _browser(n['url'])
             elif 'cmd' in n:
                 subprocess.call([n['cmd']])
 

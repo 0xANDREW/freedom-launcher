@@ -25,6 +25,13 @@
       "url": "https://google.com"
     }
   ],
-  "cols": 4
+  "cols": 4,
+  "browser": {
+    "path": "/usr/bin/google-chrome-stable",
+    "args": [
+      "--user-data-dir=/tmp/flask-launcher",
+      "--kiosk"
+    ]
+  }
 }
 
