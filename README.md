@@ -8,3 +8,10 @@ Visit `http://localhost:5000` in a browser.
 
 ## Configuration
 See `config.json` for examples.
+
+## TODO
+- User-specific settings in XDG config dir
+- User-specific profile in XDG config dir
+- Icons
+- Web config interface
+- Improve interface
