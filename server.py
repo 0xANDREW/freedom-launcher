@@ -35,5 +35,8 @@ def launch(name):
     return redirect('/')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(
+            port=launcher_config['port'], 
+            debug=launcher_config['debug']
+            )
 

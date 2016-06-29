@@ -32,6 +32,8 @@
       "--user-data-dir=/tmp/flask-launcher",
       "--kiosk"
     ]
-  }
+  },
+  "port": 5000,
+  "debug": true
 }
 
