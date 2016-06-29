@@ -1,36 +1,14 @@
-script crossorigin="anonymous" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" src="https://code.jquery.com/jquery-2.2.4.min.js" 
-
-/! Latest compiled and minified JavaScript
-script crossorigin="anonymous" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
-
-/! Latest compiled and minified CSS
-link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" rel="stylesheet"
-
-/! Optional theme
-link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" rel="stylesheet"
-
-link rel='stylesheet' href=url_for('static', filename='css/launcher.css')
+- inherit base.slim
 
 script src=url_for('static', filename='js/launcher.js')
 
-script src=url_for('static', filename='js/vendor/keypress-2.1.4.min.js')
+--- a = launcher_config['launchers']
+--- cols = launcher_config['cols']
+--- rows = [a[i:i+cols] for i in xrange(0, len(a), cols)]
 
-html
-  head
-    title flask-launcher
-
-  body
-    .container-fluid
-
-      .col-md-4
-        h1
-          a.entry href="/launch/netflix" netflix
-
-      .col-md-4
-        h1
-          a.entry href="/launch/youtube" youtube
-
-      .col-md-4
-        h1
-          a.entry href='/launch/kodi' kodi
+- for row in rows:
+  - for launcher in row:
+    div class=('col-md-%d' % (12 / cols))
+      h1
+        a.entry href=('/launch/%s' % launcher['name']) =launcher['name']
 

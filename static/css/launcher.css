@@ -1,8 +1,12 @@
 .focused {
-  border: 1px dashed black;
+  border: 1px dashed white;
 }
 
 .entry {
   padding: 5px;
+}
+
+body {
+  background-color: #262626;
 }
 

@@ -1,0 +1,30 @@
+{
+  "launchers": [
+    {
+      "name": "Netflix",
+      "url": "https://netflix.com"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://youtube.com/tv"
+    },
+    {
+      "name": "Kodi",
+      "cmd": "kodi"
+    },
+    {
+      "name": "Vimeo",
+      "url": "https://vimeo.com/couchmode"
+    },
+    {
+      "name": "Amazon Video",
+      "url": "https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011"
+    },
+    {
+      "name": "Google",
+      "url": "https://google.com"
+    }
+  ],
+  "cols": 4
+}
+
