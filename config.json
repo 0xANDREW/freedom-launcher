@@ -10,7 +10,7 @@
     },
     {
       "name": "Kodi",
-      "cmd": "kodi"
+      "cmd": "/usr/bin/kodi"
     },
     {
       "name": "Vimeo",
